@@ -1,0 +1,30 @@
+{
+  "name": "node-quites-lib",
+  "version": "0.0.1",
+  "description": "Official library for working with [API Quites](http://quites.site/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quilist/node-quites-lib.git"
+  },
+  "keywords": [
+    "crypto",
+    "cryptocurrency",
+    "quotes",
+    "quites",
+    "node",
+    "js"
+  ],
+  "author": "Quilist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Quilist/node-quites-lib/issues"
+  },
+  "homepage": "https://github.com/Quilist/node-quites-lib#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
