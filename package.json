@@ -1,6 +1,6 @@
 {
   "name": "node-quites-lib",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Official library for working with [API Quites](http://quites.site/)",
   "main": "index.js",
   "scripts": {
