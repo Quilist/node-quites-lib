@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/Quilist/node-quites-lib#readme",
   "dependencies": {
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "ws": "^8.5.0"
   }
 }

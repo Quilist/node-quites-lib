@@ -2,9 +2,8 @@
 Official library for working with [API Quites](http://quites.site/)
 # Install
 ```
-npm init
-```
-```
+npm init 
+
 npm i node-quites-lib
 ```
 # Basic Usage
@@ -14,6 +13,10 @@ const Quites = require("node-quites-lib");
 const client = new Quites();
 
 client.getList().then(data => console.log(data));
+
+client.on("message", message => {
+  console.log(message);
+});
 ```
 # Methods
 
@@ -32,19 +35,14 @@ client.getList().then(data => console.log(data));
 - __client.getList(pair, above, below);__
   - Get a list of available cryptocurrency pairs.  
   - Options:
-    - pair (Optional. Sorting cryptocurrencies by a specific pair)
     - above (Optional. Sorting cryptocurrencies by a price higher than the specified one)
     - below (Optional. Sorting cryptocurrencies at a price below the specified one)   
 
 # Examples
 ```js
-client.getQuotes("BTC").then(data => console.log(data));
-```
+client.getQuotes("BTC", "eth", "xrp").then(data => console.log(data));
 
-```js
 client.convert("BTC", "ETH", 100).then(data => console.log(data));
-```
 
-```js
 client.getList("USD", 10, 20).then(data => console.log(data));
 ```
