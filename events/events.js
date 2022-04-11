@@ -2,9 +2,8 @@ const Events = require("events");
 const WebSocket = require("ws");
 
 class EventHandler extends Events.EventEmitter {
-    constructor(client) {
+    constructor() {
         super();
-        this.client = client;
         this.socket = new WebSocket(`ws://quites.site/`);
         this.set_callbacks();
     }
@@ -23,9 +22,7 @@ class EventHandler extends Events.EventEmitter {
         });
 
         this.socket.on("message", async (message) => {
-            let struct = JSON.parse(message);
-
-            this.emit("message", struct);
+            this.emit("message", JSON.parse(message));
         });
     }
 }
